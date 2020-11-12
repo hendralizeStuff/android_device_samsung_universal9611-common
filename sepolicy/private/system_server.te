@@ -1,1 +1,3 @@
 allow system_server sysfs_rtc:file rw_file_perms;
+
+get_prop(system_server, exported_camera_prop);
