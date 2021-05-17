@@ -1,6 +1,5 @@
 # Audio
 system/lib/hw/audio.playback_record.default.so
-system/lib/hw/audio.tms.default.so
 system/lib/libsecaudiocoreutils.so
 
 # Bluetooth - APT-X
