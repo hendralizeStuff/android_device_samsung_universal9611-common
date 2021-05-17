@@ -32,6 +32,8 @@ static inline const char* BtmGetDefaultName()
         return "Galaxy A51";
     else if (strstr(product_device, "m31"))
         return "Galaxy M31";
+    else if (strstr(product_device, "m21"))
+        return "Galaxy M21";
 
     // Fallback to Default
     return "Samsung Galaxy";
