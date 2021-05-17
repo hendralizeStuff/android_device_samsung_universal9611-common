@@ -60,7 +60,6 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    init.recovery.exynos9610.rc \
     init.recovery.exynos9611.rc
 
 # SamsungDoze
@@ -69,7 +68,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl.9610
+    android.hardware.sensors@1.0-impl.9611
 
 # Trust HAL
 PRODUCT_PACKAGES += \
@@ -86,4 +85,4 @@ PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 -include $(LOCAL_PATH)/product_prop.mk
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/samsung/universal9610-common/universal9610-common-vendor.mk)
+$(call inherit-product, vendor/samsung/universal9611-common/universal9611-common-vendor.mk)

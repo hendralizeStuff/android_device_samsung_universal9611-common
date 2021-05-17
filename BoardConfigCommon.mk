@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/universal9610-common
+COMMON_PATH := device/samsung/universal9611-common
 
 # Include
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
@@ -32,6 +32,9 @@ TARGET_NO_RADIOIMAGE := true
 
 # Platform
 BOARD_VENDOR := samsung
+TARGET_BOARD_PLATFORM := exynos5
+TARGET_SOC := exynos9611
+TARGET_BOOTLOADER_BOARD_NAME := universal9611
 
 # Architecture
 TARGET_ARCH := arm64
@@ -70,7 +73,7 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/samsung/universal9610
+TARGET_KERNEL_SOURCE := kernel/samsung/universal9611
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072    # (BOARD_KERNEL_PAGESIZE * 64)
@@ -134,4 +137,4 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 2
 
 # Inherit from the proprietary version
--include vendor/samsung/universal9610-common/BoardConfigVendor.mk
+-include vendor/samsung/universal9611-common/BoardConfigVendor.mk
